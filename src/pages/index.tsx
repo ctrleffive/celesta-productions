@@ -5,10 +5,14 @@ import ComingSoonVideo from "../videos/coming-soon.mp4";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <div className="flex items-center justify-center h-screen w-screen">
+    <div className="flex items-center justify-center h-screen w-screen overflow-hidden font-mono">
       <video autoPlay loop muted className="max-w-full">
         <source src={ComingSoonVideo} type="video/mp4" />
       </video>
+      <div className="text-center absolute bottom-10 text-sm flex gap-10 opacity-50">
+        <span>@celestaproductions</span>
+        <a href="tel:+918089901663">+918089901663</a>
+      </div>
     </div>
   );
 };

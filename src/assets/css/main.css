@@ -3765,6 +3765,10 @@ ul.feature-icons li:nth-child(2) {
 		margin-bottom: 0;
 	}
 
+	#wrapper>section.intro>header ul.actions {
+		display: table-row;
+	}
+
 	#wrapper>section.intro>header>* {
 		margin-left: 0;
 		margin-right: 0;

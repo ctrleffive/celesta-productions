@@ -28,7 +28,7 @@ export const Footer = () => {
         <ul className="items">
           <li>
             <h3>Email</h3>
-            <a href="mailto:connect@celestaprodctions.com">connect@celestaprodctions.com</a>
+            <a href="mailto:connect@celestaproductions.com">connect@celestaproductions.com</a>
           </li>
           <li>
             <h3>Phone</h3>

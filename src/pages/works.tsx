@@ -5,13 +5,13 @@ import { Layout } from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
 import { Footer } from "../components/Footer"
 
-const NotFoundPage: React.FC<PageProps> = () => {
+const WorksPage: React.FC<PageProps> = () => {
   return <Layout>
     <section className="intro">
       <header>
-        <h1>Not Found</h1>
+        <h1>Our Works</h1>
         <p>
-        You just hit a route that doesn&#39;t exist... the sadness.
+          We are still working on this page. Please come back later.
         </p>
         <ul className="actions">
           <li>
@@ -28,6 +28,6 @@ const NotFoundPage: React.FC<PageProps> = () => {
   </Layout>
 }
 
-export default NotFoundPage
+export default WorksPage
 
-export const Head: HeadFC = () => <title>Celesta Productions - 404</title>
+export const Head: HeadFC = () => <title>Celesta Productions - Works</title>

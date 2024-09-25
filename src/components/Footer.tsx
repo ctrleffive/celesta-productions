@@ -13,7 +13,7 @@ export const Footer = () => {
         </p>
         <ul className="actions">
           <li>
-            <Link to="/booking" className="button primary large">
+            <Link to="/bookings" className="button primary large">
               Book an appointment
             </Link>
           </li>

@@ -5,11 +5,11 @@ import { Layout } from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
 import { InlineWidget } from "react-calendly"
 
-const BookingPage: React.FC<PageProps> = () => {
+const BookingsPage: React.FC<PageProps> = () => {
   return <Layout>
     <section className="intro">
       <header>
-        <h1>Booking</h1>
+        <h1>Bookings</h1>
         <p>
           Book a slot now for a hassle-free experience, and we will give you a call!
         </p>
@@ -33,6 +33,6 @@ const BookingPage: React.FC<PageProps> = () => {
   </Layout>
 }
 
-export default BookingPage
+export default BookingsPage
 
 export const Head: HeadFC = () => <title>Celesta Productions - Booking</title>

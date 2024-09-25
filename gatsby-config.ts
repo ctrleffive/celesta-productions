@@ -4,10 +4,8 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: "Celesta Productions",
     siteUrl: "https://celestaproductions.com",
+    description: "",
   },
-  // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
-  // If you use VSCode you can also use the GraphQL plugin
-  // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-cloudflare-pages",
@@ -16,6 +14,15 @@ const config: GatsbyConfig = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-plugin-google-fonts",
+      options: {
+        fonts: [
+          "raleway\:600,800",
+          "source sans pro\:300,600,700,300i,600i,700i"
+        ],
+      }
+    },
     {
       resolve: "gatsby-plugin-google-gtag",
       options: {

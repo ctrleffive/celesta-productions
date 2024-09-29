@@ -9,6 +9,11 @@ const images = [
   <StaticImage key={1} src="../images/hero-gallery/one.jpg" className="object-cover w-full h-full" alt="" />,
   <StaticImage key={2} src="../images/hero-gallery/two.jpg" className="object-cover w-full h-full" alt="" />,
   <StaticImage key={3} src="../images/hero-gallery/three.jpg" className="object-cover w-full h-full" alt="" />,
+  <StaticImage key={4} src="../images/hero-gallery/four.jpg" className="object-cover w-full h-full" alt="" />,
+  <StaticImage key={5} src="../images/hero-gallery/six.jpg" className="object-cover w-full h-full" alt="" />,
+  <span key={0} className="image fill !flex items-center justify-center" data-position="center">
+    <StaticImage src="../images/usd.svg" className="overflow-hidden" width={250} height={216} alt="Upside Down" />
+  </span>,
 ]
 
 export const HeroGallery = () => {

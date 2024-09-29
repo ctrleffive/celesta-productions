@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
+import { SocialMedia } from "./SocialMedia";
 
 export const Footer = () => {
   return <>
@@ -42,32 +43,11 @@ export const Footer = () => {
           </li>
           <li>
             <h3>Address</h3>
-            <span>Celesta Productions, 12/710-B, Cliff House, Alummoodu, Kaniyapuram, Thiruvananthapuram, Kerala, India.<br />PIN: 695 301</span>
+            <span>Celesta Productions, 12/710-B, Cliff House, Alummoodu, Kaniyapuram, Thiruvananthapuram, Kerala, India. PIN: 695 301</span>
           </li>
           <li>
             <h3>Elsewhere</h3>
-            <ul className="icons">
-              <li>
-                <a href="https://wa.me/918089901663" rel="noreferrer" className="icon brands fa-whatsapp">
-                  <span className="label">WhatsApp</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/celestaprods" target="_blank" rel="noreferrer" className="icon brands fa-twitter">
-                  <span className="label">Twitter</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://instagram.com/celestaproductions" rel="noreferrer" className="icon brands fa-instagram">
-                  <span className="label">Instagram</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://youtube.com/@celestaproductions" target="_blank" className="icon brands fa-youtube" rel="noreferrer">
-                  <span className="label">YouTube</span>
-                </a>
-              </li>
-            </ul>
+            <SocialMedia />
           </li>
         </ul>
       </footer>

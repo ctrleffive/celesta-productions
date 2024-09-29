@@ -3387,6 +3387,10 @@ ul.feature-icons li:nth-child(2) {
 	position: relative;
 }
 
+#wrapper section>.content.hero {
+	padding: 0;
+}
+
 #wrapper section>footer {
 	grid-area: footer;
 	text-align: right;

@@ -4,6 +4,7 @@ import { Link, type HeadFC, type PageProps } from "gatsby"
 import { Layout } from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
 import { Footer } from "../components/Footer"
+import { HeroGallery } from "../components/HeroGallery"
 
 const NotFoundPage: React.FC<PageProps> = () => {
   return <Layout>
@@ -20,9 +21,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
         </ul>
       </header>
       <div className="content">
-        <span className="image fill !flex items-center justify-center" data-position="center">
-          <StaticImage src="../images/logo.svg" className="rounded-full overflow-hidden" width={250} height={250} alt="Celesta Productions" />
-        </span>
+        <HeroGallery   />
       </div>
     </section>
   </Layout>

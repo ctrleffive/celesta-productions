@@ -4,6 +4,7 @@ import { Link, type HeadFC, type PageProps } from "gatsby"
 import { Layout } from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
 import { Footer } from "../components/Footer"
+import { HeroGallery } from "../components/HeroGallery"
 
 const WorksPage: React.FC<PageProps> = () => {
   return <Layout>
@@ -20,11 +21,118 @@ const WorksPage: React.FC<PageProps> = () => {
         </ul>
       </header>
       <div className="content">
-        <span className="image fill !flex items-center justify-center" data-position="center">
-          <StaticImage src="../images/logo.svg" className="rounded-full overflow-hidden" width={250} height={250} alt="Celesta Productions" />
-        </span>
+        <HeroGallery />
       </div>
     </section>
+
+
+    {/* <section>
+  <header>
+    <h2>Ultrices erat magna sed condimentum</h2>
+  </header>
+  <div className="content">
+    <p>
+      <strong>Integer mollis egestas</strong> nam maximus erat id euismod
+      egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.
+    </p>
+
+    <section>
+      <header>
+        <h3>Erat aliquam</h3>
+        <p>
+          Vehicula ultrices dolor amet ultricies et condimentum. Magna sed
+          etiam consequat, et lorem adipiscing sed dolor sit amet,
+          consectetur amet do eiusmod tempor incididunt ipsum suspendisse
+          ultrices gravida.
+        </p>
+      </header>
+      <div className="content">
+        <Gallery
+          images={images01.map(
+            ({
+              id,
+              source,
+              thumbnail,
+              caption,
+              description,
+              landscape,
+            }) => ({
+              source,
+              thumbnail,
+              caption,
+              description,
+              landscape,
+            })
+          )}
+        />
+      </div>
+    </section>
+
+    <section>
+      <header>
+        <h3>Nisl consequat</h3>
+        <p>
+          Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
+          aliquam sed facilisis ante interdum congue. Integer mollis, nisl
+          amet convallis, porttitor magna ullamcorper, amet mauris. Ut magna
+          finibus nisi nec lacinia ipsum maximus.
+        </p>
+      </header>
+      <div className="content">
+        <Gallery
+          images={images02.map(
+            ({
+              id,
+              source,
+              thumbnail,
+              caption,
+              description,
+              landscape,
+            }) => ({
+              source,
+              thumbnail,
+              caption,
+              description,
+              landscape,
+            })
+          )}
+        />
+      </div>
+    </section>
+
+    <section>
+      <header>
+        <h3>Lorem gravida</h3>
+        <p>
+          Proin aliquam facilisis ante interdum. Sed nulla amet lorem
+          feugiat tempus aenean ornare velit lacus, ac varius sed enim lorem
+          ullamcorper dolore. ac varius enim lorem ullamcorper dolore. Proin
+          aliquam facilisis.
+        </p>
+      </header>
+      <div className="content">
+        <Gallery
+          images={images03.map(
+            ({
+              id,
+              source,
+              thumbnail,
+              caption,
+              description,
+              landscape,
+            }) => ({
+              source,
+              thumbnail,
+              caption,
+              description,
+              landscape,
+            })
+          )}
+        />
+      </div>
+    </section>
+  </div>
+</section> */}
   </Layout>
 }
 

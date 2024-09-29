@@ -1,9 +1,10 @@
 // biome-ignore lint/style/useImportType: <explanation>
 import * as React from "react";
-import type { HeadFC, PageProps } from "gatsby";
+import { Link, type HeadFC, type PageProps } from "gatsby";
 
 import { Layout } from '../components/Layout'
 import { StaticImage } from "gatsby-plugin-image";
+import { HeroGallery } from "../components/HeroGallery";
 
 const IndexPage: React.FC<PageProps> = () => {
   return <Layout>
@@ -15,28 +16,40 @@ const IndexPage: React.FC<PageProps> = () => {
         </p>
         <ul className="actions">
           <li>
+          </li>
+          <li>
             <span className="arrow scrolly" />
           </li>
         </ul>
       </header>
-      <div className="content">
-        <span className="image fill !flex items-center justify-center" data-position="center">
-          <StaticImage src="../images/logo.svg" className="rounded-full overflow-hidden" width={250} height={250} alt="Celesta Productions" />
-        </span>
+      <div className="content hero">
+        <HeroGallery />
       </div>
     </section>
 
     <section>
       <header>
-        <h2>Who are we?</h2>
+        <h2>Our works</h2>
       </header>
       <div className="content">
         <p>
-          <strong>We </strong> specialize in music production, recording, audiovisual rentals, event management, music bands, video editing, and more. Experience our professional services and let us bring your creative endeavors to life.
+          <strong>We</strong> pride ourselves on delivering exceptional audio experiences that not only meet but exceed client expectations, blending technical expertise with creative sound design seamlessly.
         </p>
         <span className="image main">
-          <StaticImage src="../images/who-are-we.jpg" className="rounded" alt="" />
+          <StaticImage src="../images/stage.jpg" className="rounded" alt="" />
         </span>
+        <ul className="actions">
+          <li>
+            <Link to="/works" className="button primary large">
+              See Our Works
+            </Link>
+          </li>
+          <li>
+            <Link to="/bookings" className="button large">
+              Book an appointment
+            </Link>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -69,138 +82,19 @@ const IndexPage: React.FC<PageProps> = () => {
       </div>
     </section>
 
-    {/* <section>
+    <section>
       <header>
-        <h2>Ultrices erat magna sed condimentum</h2>
+        <h2>Who are we?</h2>
       </header>
       <div className="content">
         <p>
-          <strong>Integer mollis egestas</strong> nam maximus erat id euismod
-          egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.
+          <strong>We </strong> specialize in music production, recording, audiovisual rentals, event management, music bands, video editing, and more. Experience our professional services and let us bring your creative endeavors to life.
         </p>
-
-        <section>
-          <header>
-            <h3>Erat aliquam</h3>
-            <p>
-              Vehicula ultrices dolor amet ultricies et condimentum. Magna sed
-              etiam consequat, et lorem adipiscing sed dolor sit amet,
-              consectetur amet do eiusmod tempor incididunt ipsum suspendisse
-              ultrices gravida.
-            </p>
-          </header>
-          <div className="content">
-            <Gallery
-              images={images01.map(
-                ({
-                  id,
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                  landscape,
-                }) => ({
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                  landscape,
-                })
-              )}
-            />
-          </div>
-        </section>
-
-        <section>
-          <header>
-            <h3>Nisl consequat</h3>
-            <p>
-              Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-              aliquam sed facilisis ante interdum congue. Integer mollis, nisl
-              amet convallis, porttitor magna ullamcorper, amet mauris. Ut magna
-              finibus nisi nec lacinia ipsum maximus.
-            </p>
-          </header>
-          <div className="content">
-            <Gallery
-              images={images02.map(
-                ({
-                  id,
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                  landscape,
-                }) => ({
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                  landscape,
-                })
-              )}
-            />
-          </div>
-        </section>
-
-        <section>
-          <header>
-            <h3>Lorem gravida</h3>
-            <p>
-              Proin aliquam facilisis ante interdum. Sed nulla amet lorem
-              feugiat tempus aenean ornare velit lacus, ac varius sed enim lorem
-              ullamcorper dolore. ac varius enim lorem ullamcorper dolore. Proin
-              aliquam facilisis.
-            </p>
-          </header>
-          <div className="content">
-            <Gallery
-              images={images03.map(
-                ({
-                  id,
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                  landscape,
-                }) => ({
-                  source,
-                  thumbnail,
-                  caption,
-                  description,
-                  landscape,
-                })
-              )}
-            />
-          </div>
-        </section>
+        <span className="image main">
+          <StaticImage src="../images/who-are-we.jpg" className="rounded" alt="" />
+        </span>
       </div>
-    </section> */}
-
-    {/* <section>
-      <header>
-        <h2>Duis sed adpiscing veroeros amet</h2>
-      </header>
-      <div className="content">
-        <p>
-          <strong>Proin tempus feugiat</strong> sed varius enim lorem
-          ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim
-          lorem ullamcorper dolore.
-        </p>
-        <ul className="actions">
-          <li>
-            <a href="#" className="button primary large">
-              Get Started
-            </a>
-          </li>
-          <li>
-            <a href="#" className="button large">
-              Learn More
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section> */}
+    </section>
   </Layout>
 };
 

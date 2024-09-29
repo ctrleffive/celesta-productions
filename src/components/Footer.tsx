@@ -1,4 +1,5 @@
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 
 export const Footer = () => {
@@ -23,6 +24,9 @@ export const Footer = () => {
             </Link>
           </li>
         </ul>
+        <span className="image main">
+          <StaticImage src="../images/on-air.jpg" className="rounded" alt="" />
+        </span>
       </div>
       <footer>
         <ul className="items">

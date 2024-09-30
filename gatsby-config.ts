@@ -49,6 +49,18 @@ const config: GatsbyConfig = {
       },
       __key: "pages",
     },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "Celesta Productions",
+        short_name: "Celesta Productions",
+        start_url: "/",
+        background_color: "#49B5E3",
+        theme_color: "#49B5E3",
+        display: "browser",
+        icon: "./src/images/logo.png"
+      },
+    },
   ],
 };
 

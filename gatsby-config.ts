@@ -14,6 +14,7 @@ const config: GatsbyConfig = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-google-fonts",
       options: {
@@ -47,18 +48,6 @@ const config: GatsbyConfig = {
         path: "./src/pages/",
       },
       __key: "pages",
-    },
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: "Celesta Productions",
-        short_name: "Celesta Productions",
-        start_url: "/",
-        background_color: "#000000",
-        theme_color: "#49B5E3",
-        display: "standalone",
-        icon: "./src/images/logo.png"
-      },
     },
   ],
 };
